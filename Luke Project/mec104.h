@@ -2,6 +2,15 @@
 
 #include <iostream>
 
+/** Manufacturing Engineering module
+*containing 3 equations for Material Removal Rate,
+*surface cutting speed and milling power
+* + varients of these equations
+*
+* @author Luke Herron <b00641161> <herron-l1@email.ulster.ac.uk>
+* https://github.com/luke959/mec104/ for README.md
+*/
+
 class mec104
 {
 private:

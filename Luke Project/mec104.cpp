@@ -1,15 +1,29 @@
 /**
 *@author Luke Herron <b00641161> <herron-l1@email.ulster.ac.uk>
+*
+* Manufacturing processes module
+*
+*@author Luke Herron <b00641161> <herron-l1@email.ulster.ac.uk>
+* https://github.com/luke959/mec104/ for README.md
+*
+*Part of a larger project which enables you to select an equation you wish
+*to calculate from the manufacturing processes module
+*and varients of that equation depending on values that are given to you.
 */
-
-// mec104.cpp : Defines the entry point for the console application.
-//
+// Luke.cpp : Defines the entry point for the console application.
 
 #include <iostream>
 #include "mec104.h"
 
 using namespace std;
 mec104 m;
+
+/**
+*Gives cases 1, 2, 3 of which are equations
+*
+*@param select a case number for equation selection
+*@return A selected 'equation'
+*/
 
 void mec104::equation_selection()
 {
@@ -33,6 +47,12 @@ void mec104::equation_selection()
 				m.calculate_feedrate(m.feedRate, m.depthOfCut, m.widthOfCut);
 				break;
 			}
+/**
+*Gives cases of which are varients of the selected equation
+*
+*@param select a case number for equation varient selection
+*@return A selected 'equation varient'
+*/
 			break;
 
 		case 2:
